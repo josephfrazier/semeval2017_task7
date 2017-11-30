@@ -1,0 +1,13 @@
+{
+  "name": "semeval2017_task7",
+  "version": "0.0.0",
+  "files": [
+    "index.json"
+  ],
+  "scripts": {
+    "prepare": "make"
+  },
+  "devDependencies": {
+    "xml-json": "^2.0.2"
+  }
+}
