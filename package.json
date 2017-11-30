@@ -1,9 +1,12 @@
 {
   "name": "semeval2017_task7",
   "version": "0.0.1",
+  "author": "Joseph Frazier <1212jtraceur@gmail.com>",
   "files": [
     "index.json"
   ],
+  "main": "index.json",
+  "repository": "https://github.com/josephfrazier/semeval2017_task7.git",
   "scripts": {
     "prepare": "make"
   },
