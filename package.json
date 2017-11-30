@@ -1,12 +1,20 @@
 {
   "name": "semeval2017_task7",
   "version": "0.0.1",
+  "description": "This package contains a list of puns from the dataset at https://www.ukp.tu-darmstadt.de/data/sense-labelling-resources/sense-annotated-english-puns/",
+  "homepage": "https://github.com/josephfrazier/semeval2017_task7#readme",
+  "bugs": {
+    "url": "https://github.com/josephfrazier/semeval2017_task7/issues"
+  },
   "author": "Joseph Frazier <1212jtraceur@gmail.com>",
   "files": [
     "index.json"
   ],
   "main": "index.json",
-  "repository": "https://github.com/josephfrazier/semeval2017_task7.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephfrazier/semeval2017_task7.git"
+  },
   "scripts": {
     "prepare": "make"
   },
