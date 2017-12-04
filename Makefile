@@ -4,8 +4,11 @@ index.json: subtask1-homographic-test.js subtask1-homographic-test.json subtask1
 semeval2017_task7.tar.xz:
 	wget http://alt.qcri.org/semeval2017/task7/data/uploads/semeval2017_task7.tar.xz
 
-%.json: semeval2017_task7.tar.xz
-	tar xJvf semeval2017_task7.tar.xz semeval2017_task7/data/test/$(addsuffix .xml,$(basename $@)) --to-stdout | node_modules/.bin/xml-json corpus > $@
+%.xml %.gold: semeval2017_task7.tar.xz
+	tar xJvf semeval2017_task7.tar.xz --wildcards --strip-components=3 semeval2017_task7/data/test/$(basename $@).*
 
-%.js: semeval2017_task7.tar.xz
-	tar xJvf semeval2017_task7.tar.xz semeval2017_task7/data/test/$(addsuffix .gold,$(basename $@)) --to-stdout | sed 's/	/:/g' | sed 's/$$/,/g' | echo 'module.exports = {' $$(cat) '}' > $@
+%.json: %.xml
+	cat $< | node_modules/.bin/xml-json corpus > $@
+
+%.js: %.gold
+	cat $< | sed 's/	/:/g' | sed 's/$$/,/g' | echo 'module.exports = {' $$(cat) '}' > $@

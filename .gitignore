@@ -3,7 +3,11 @@ node_modules
 # build artifacts
 index.json
 semeval2017_task7.tar.xz
+subtask1-heterographic-test.gold
 subtask1-heterographic-test.js
 subtask1-heterographic-test.json
+subtask1-heterographic-test.xml
+subtask1-homographic-test.gold
 subtask1-homographic-test.js
 subtask1-homographic-test.json
+subtask1-homographic-test.xml
