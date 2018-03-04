@@ -37,6 +37,10 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
+json-stringify-pretty-compact@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/json-stringify-pretty-compact/-/json-stringify-pretty-compact-1.1.0.tgz#4fa5b898f61a287d64828691baa822a41f3ad5ab"
+
 ldjson-stream@^1.1.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ldjson-stream/-/ldjson-stream-1.2.1.tgz#91beceda5ac4ed2b17e649fb777e7abfa0189c2b"

@@ -13,4 +13,5 @@ const sentences = text.map(({ id, word }) => ({
 }));
 const puns = sentences.filter(({ id }) => gold[id]);
 
-process.stdout.write(JSON.stringify(puns));
+var stringify = require("json-stringify-pretty-compact")
+process.stdout.write(stringify(puns, {maxLength: 999}));
